@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog · El Ascenso del Tercer Reich</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%238b0000'/><text y='24' x='4' font-size='22' fill='%23d4a017'>R</text></svg>" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+
+  <!-- AUDIO automático sin controles visibles -->
+  <audio id="bgAudio" loop autoplay style="display:none;">
+    <source src="audio/musica.mp3" type="audio/mpeg" />
+  </audio>
+
+  <header>
+    <div class="logo">&#9763; Das Reich</div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li><a href="blog.html" class="active"><i class="fa-solid fa-feather-pointed"></i> Blog</a></li>
+        <li><a href="galeria.html"><i class="fa-solid fa-images"></i> Galería</a></li>
+        <li><a href="videos.html"><i class="fa-solid fa-film"></i> Videos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+    <img class="page-banner" src="img/foto1.jpg" alt="Hitler y Hindenburg, Potsdam 1933" />
+
+    <div class="container">
+      <div class="blog-header">
+        <div class="blog-title-wrap">
+          <h2>La República de Weimar y el Vacío de Poder</h2>
+          <span class="date"><i class="fa-regular fa-calendar"></i> 27 / 05 / 2026 &nbsp;·&nbsp; Historia Contemporánea</span>
+        </div>
+        <div class="author-card">
+          <img src="img/autor.png" alt="Foto de Dereck Ramos" />
+          <span>Dereck Ramos<br />Estudiante ISIL</span>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <article class="blog-article blog-large">
+
+        <p>Al finalizar la Primera Guerra Mundial en 1918, Alemania quedó devastada moral, económica y políticamente. El Tratado de Versalles impuso reparaciones de guerra que hundieron la economía germana, generando una hiperinflación sin precedentes que destruyó los ahorros de la clase media y creó un caldo de cultivo ideal para el extremismo político.</p>
+
+        <figure class="float-img">
+          <img src="img/foto1.jpg" alt="Hitler y Hindenburg, Potsdam 1933" />
+          <figcaption>Hitler y Hindenburg,<br />Potsdam, 21.03.1933</figcaption>
+        </figure>
+
+        <p>Adolf Hitler, un cabo austriaco de la Gran Guerra, encontró en este clima de resentimiento y desesperación el combustible para su ascenso. Ingresó al Partido Obrero Alemán en 1919 y rápidamente tomó su liderazgo, renombrándolo como el <em>Nationalsozialistische Deutsche Arbeiterpartei</em> (NSDAP). Su oratoria incendiaria y la promesa de restaurar la grandeza alemana resonaron con millones de ciudadanos desilusionados.</p>
+
+        <p>El fallido <em>Putsch de la Cervecería</em> de 1923 en Múnich terminó con Hitler en prisión, donde dictó el primer volumen de <em>Mein Kampf</em>. Lejos de aniquilar al movimiento, el juicio le dio notoriedad nacional. Salió de la cárcel en 1924 decidido a conquistar el poder por vías legales.</p>
+
+        <p>La Gran Depresión de 1929 fue el catalizador definitivo. El desempleo masivo y la desconfianza en las instituciones democráticas hicieron que los votantes buscaran soluciones radicales. El NSDAP pasó del 2,6% de los votos en 1928 al 37,4% en julio de 1932, convirtiéndose en el partido más votado del Reichstag.</p>
+
+        <p>El 30 de enero de 1933, el presidente Paul von Hindenburg nombró a Hitler Canciller del Reich. En menos de dos años, mediante el Decreto del Incendio del Reichstag y la <em>Ley Habilitante</em>, Hitler disolvió la democracia y concentró todo el poder en sus manos. La República de Weimar había muerto. Nacía el Tercer Reich.</p>
+
+      </article>
+
+      <div class="clearfix"></div>
+      <hr class="divider" />
+
+      <div class="social-section">
+        <p>Síguenos en nuestras redes sociales</p>
+        <div class="social-icons">
+          <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-logo">Das Reich</div>
+    <p>Sitio web de carácter estrictamente histórico y educativo.</p>
+    <p>Diseño y Desarrollo Web · ISIL 2026</p>
+    <div class="social-icons" style="margin-top:16px;">
+      <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    var audio = document.getElementById('bgAudio');
+    audio.volume = 0.3;
+    audio.play().catch(function(){});
+  </script>
+</body>
+</html>

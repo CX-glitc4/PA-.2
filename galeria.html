@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galería · El Ascenso del Tercer Reich</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%238b0000'/><text y='24' x='4' font-size='22' fill='%23d4a017'>R</text></svg>" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+
+  <!-- AUDIO automático sin controles visibles -->
+  <audio id="bgAudio" loop autoplay>
+    <source src="audio/musica.mp3" type="audio/mpeg" />
+  </audio>
+
+  <header>
+    <div class="logo">&#9763; Das Reich</div>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li><a href="blog.html"><i class="fa-solid fa-feather-pointed"></i> Blog</a></li>
+        <li><a href="galeria.html" class="active"><i class="fa-solid fa-images"></i> Galería</a></li>
+        <li><a href="videos.html"><i class="fa-solid fa-film"></i> Videos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-wrap">
+    <img class="page-banner" src="img/portada.jpg" alt="Archivo histórico" />
+
+    <div class="container">
+      <h2 class="section-heading">&#128247; Archivo Fotográfico</h2>
+      <p class="section-sub">Haz clic en cada imagen para ver más información</p>
+
+      <!-- GALERÍA FULL WIDTH con click modal -->
+      <div class="gallery-grid">
+
+        <figure class="gallery-item" onclick="abrirModal('img/portada.jpg','El Führer, 1933','Adolf Hitler saliendo de un edificio en 1933, rodeado de sus seguidores. Ese año fue nombrado Canciller del Reich por el presidente Hindenburg, marcando el inicio oficial del Tercer Reich.')">
+          <img src="img/portada.jpg" alt="El Führer 1933" />
+          <figcaption>El Führer, 1933</figcaption>
+        </figure>
+
+        <figure class="gallery-item" onclick="abrirModal('img/foto1.jpg','Hitler y Hindenburg, 1933','El 21 de marzo de 1933 en Potsdam, el presidente Paul von Hindenburg da la mano a Adolf Hitler. Este encuentro, conocido como el Día de Potsdam, simbolizó la alianza entre el viejo orden conservador y el nuevo movimiento nazi.')">
+          <img src="img/foto1.jpg" alt="Hitler y Hindenburg 1933" />
+          <figcaption>Hitler y Hindenburg, 1933</figcaption>
+        </figure>
+
+        <figure class="gallery-item" onclick="abrirModal('img/foto2.jpg','Concentración del NSDAP','Los mítines masivos del Partido Nacional Socialista eran instrumentos de propaganda diseñados por Albert Speer y dirigidos por Goebbels. Miles de soldados formaban en perfecta sincronía para demostrar el poder y la unidad del Reich.')">
+          <img src="img/foto2.jpg" alt="Concentración del NSDAP" />
+          <figcaption>Concentración del NSDAP</figcaption>
+        </figure>
+
+        <figure class="gallery-item" onclick="abrirModal('img/foto3.jpg','Propaganda Aliada WWII','Los Aliados respondieron a la propaganda nazi con sus propias campañas. Carteles, películas y transmisiones de radio buscaban mantener la moral de la población civil y desmoralizar al enemigo durante el conflicto.')">
+          <img src="img/foto3.jpg" alt="Propaganda Aliada WWII" />
+          <figcaption>Propaganda Aliada WWII</figcaption>
+        </figure>
+
+        <figure class="gallery-item" onclick="abrirModal('img/foto4.jpg','Soldados Aliados, WWII','Soldados de las fuerzas aliadas durante la Segunda Guerra Mundial. El ejército aliado estuvo compuesto por tropas de más de 30 naciones que combatieron juntas para frenar el avance del Tercer Reich por Europa.')">
+          <img src="img/foto4.jpg" alt="Soldados Aliados WWII" />
+          <figcaption>Soldados Aliados, WWII</figcaption>
+        </figure>
+
+        <figure class="gallery-item" onclick="abrirModal('img/foto5.jpg','Mapas Históricos WWII','Mapas militares de la Segunda Guerra Mundial que muestran los frentes de batalla, las rutas de invasión y los movimientos de tropas. El análisis cartográfico fue fundamental para la planificación de operaciones como el Día D.')">
+          <img src="img/foto5.jpg" alt="Mapas Históricos WWII" />
+          <figcaption>Mapas Históricos WWII</figcaption>
+        </figure>
+
+        <figure class="gallery-item" onclick="abrirModal('img/foto6.jpg','Tanques Panzer I–VI','Los tanques Panzer fueron el núcleo de la Blitzkrieg alemana. Desde el ligero Panzer I hasta el temido Tiger VI con su cañón de 88mm, representaron la evolución tecnológica militar más importante del conflicto.')">
+          <img src="img/foto6.jpg" alt="Tanques Panzer I-VI" />
+          <figcaption>Tanques Panzer I–VI</figcaption>
+        </figure>
+
+        <figure class="gallery-item" onclick="abrirModal('img/foto7.jpg','Insignias del Ejército Alemán','El sistema de rangos del ejército alemán (Wehrmacht) era altamente estructurado. Las insignias en el uniforme indicaban la jerarquía exacta de cada soldado, desde los generales hasta los soldados rasos.')">
+          <img src="img/foto7.jpg" alt="Insignias del Ejército Alemán" />
+          <figcaption>Insignias del Ejército Alemán</figcaption>
+        </figure>
+
+      </div>
+
+      <hr class="divider" />
+      <div class="social-section">
+        <p>Síguenos en nuestras redes sociales</p>
+        <div class="social-icons">
+          <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" onclick="cerrarModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="cerrarModal()"><i class="fa-solid fa-xmark"></i></button>
+      <img id="modal-img" src="" alt="" />
+      <div class="modal-info">
+        <h3 id="modal-titulo"></h3>
+        <p id="modal-texto"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">Das Reich</div>
+    <p>Sitio web de carácter estrictamente histórico y educativo.</p>
+    <p>Diseño y Desarrollo Web · ISIL 2026</p>
+    <div class="social-icons" style="margin-top:16px;">
+      <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    // Música automática con volumen bajo
+    var audio = document.getElementById('bgAudio');
+    audio.volume = 0.3;
+    audio.play().catch(function(){});
+
+    // Modal
+    function abrirModal(src, titulo, texto) {
+      document.getElementById('modal-img').src = src;
+      document.getElementById('modal-titulo').textContent = titulo;
+      document.getElementById('modal-texto').textContent = texto;
+      document.getElementById('modal').style.display = 'flex';
+    }
+    function cerrarModal() {
+      document.getElementById('modal').style.display = 'none';
+    }
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') cerrarModal();
+    });
+  </script>
+</body>
+</html>
