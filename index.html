@@ -11,7 +11,7 @@
 <body>
 
   <!-- AUDIO oculto automático -->
-  <audio id="bgAudio" loop autoplay style="display:none;">
+  <audio controls loop autoplay>
     <source src="audio/musica.mp3" type="audio/mpeg" />
   </audio>
 
@@ -129,11 +129,6 @@
     </div>
   </footer>
 
-  <script>
-    var audio = document.getElementById('bgAudio');
-    audio.volume = 0.3;
-    audio.play().catch(function(){});
-  </script>
 
 </body>
 </html>
