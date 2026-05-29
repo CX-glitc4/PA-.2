@@ -1,107 +1,90 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Galería · El Ascenso del Tercer Reich</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%238b0000'/><text y='24' x='4' font-size='22' fill='%23d4a017'>R</text></svg>" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/estilo.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - El Ascenso del Tercer Reich</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/portada.jpg" type="image/jpeg">
 </head>
 <body>
+    <audio src="audio/musica.mp3" autoplay loop></audio>
+    <div id="container">
+        <div id="principal">
+            <header>
+                <h1>El Ascenso del Tercer Reich</h1>
+                <nav class="menu">
+                    <ul class="web">
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i> INICIO</a></li>
+                        <li><a href="blog.html"><i class="fa-solid fa-feather-pointed"></i> BLOG</a></li>
+                        <li><a href="galeria.html" class="active"><i class="fa-solid fa-images"></i> GALERIA</a></li>
+                        <li><a href="videos.html"><i class="fa-solid fa-film"></i> VIDEOS</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-  <audio controls loop autoplay>
-    <source src="audio/musica.mp3" type="audio/mpeg" />
-  </audio>
+            <section>
+                <h2 style="color:#d4a017; text-align:center; margin-bottom:8px;">Archivo Fotográfico</h2>
+                <p style="text-align:center; color:#888; font-style:italic; margin-bottom:30px;">Pasa el cursor sobre cada imagen para verla en detalle</p>
 
-  <header>
-    <div class="logo">&#9763; Das Reich</div>
-    <nav>
-      <ul>
-        <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-        <li><a href="blog.html"><i class="fa-solid fa-feather-pointed"></i> Blog</a></li>
-        <li><a href="galeria.html" class="active"><i class="fa-solid fa-images"></i> Galería</a></li>
-        <li><a href="videos.html"><i class="fa-solid fa-film"></i> Videos</a></li>
-      </ul>
-    </nav>
-  </header>
+                <div id="imagenes">
 
-  <main class="page-wrap">
-    <img class="page-banner" src="img/portada.jpg" alt="Archivo histórico" />
+                    <figure>
+                        <img src="img/portada.jpg" alt="El Führer 1933">
+                        <figcaption>El Führer, 1933</figcaption>
+                    </figure>
 
-    <div class="container">
-      <h2 class="section-heading">&#128247; Archivo Fotográfico</h2>
-      <p class="section-sub">Pasa el cursor sobre cada imagen para verla en detalle</p>
+                    <figure>
+                        <img src="img/foto1.jpg" alt="Hitler y Hindenburg 1933">
+                        <figcaption>Hitler y Hindenburg, 1933</figcaption>
+                    </figure>
 
-      <div class="gallery-grid">
+                    <figure>
+                        <img src="img/foto2.jpg" alt="Concentración del NSDAP">
+                        <figcaption>Concentración del NSDAP</figcaption>
+                    </figure>
 
-        <figure class="gallery-item">
-          <img src="img/portada.jpg" alt="El Führer 1933" />
-          <figcaption>El Führer, 1933</figcaption>
-        </figure>
+                    <figure>
+                        <img src="img/foto3.jpg" alt="Propaganda Aliada WWII">
+                        <figcaption>Propaganda Aliada WWII</figcaption>
+                    </figure>
 
-        <figure class="gallery-item">
-          <img src="img/foto1.jpg" alt="Hitler y Hindenburg 1933" />
-          <figcaption>Hitler y Hindenburg, 1933</figcaption>
-        </figure>
+                    <figure>
+                        <img src="img/foto4.jpg" alt="Soldados Aliados WWII">
+                        <figcaption>Soldados Aliados, WWII</figcaption>
+                    </figure>
 
-        <figure class="gallery-item">
-          <img src="img/foto2.jpg" alt="Concentración del NSDAP" />
-          <figcaption>Concentración del NSDAP</figcaption>
-        </figure>
+                    <figure>
+                        <img src="img/foto5.jpg" alt="Mapas Históricos WWII">
+                        <figcaption>Mapas Históricos WWII</figcaption>
+                    </figure>
 
-        <figure class="gallery-item">
-          <img src="img/foto3.jpg" alt="Propaganda Aliada WWII" />
-          <figcaption>Propaganda Aliada WWII</figcaption>
-        </figure>
+                    <figure>
+                        <img src="img/foto6.jpg" alt="Tanques Panzer I-VI">
+                        <figcaption>Tanques Panzer I-VI</figcaption>
+                    </figure>
 
-        <figure class="gallery-item">
-          <img src="img/foto4.jpg" alt="Soldados Aliados WWII" />
-          <figcaption>Soldados Aliados, WWII</figcaption>
-        </figure>
+                    <figure>
+                        <img src="img/foto7.jpg" alt="Insignias del Ejército Alemán">
+                        <figcaption>Insignias del Ejército Alemán</figcaption>
+                    </figure>
 
-        <figure class="gallery-item">
-          <img src="img/foto5.jpg" alt="Mapas Históricos WWII" />
-          <figcaption>Mapas Históricos WWII</figcaption>
-        </figure>
+                </div>
+            </section>
 
-        <figure class="gallery-item">
-          <img src="img/foto6.jpg" alt="Tanques Panzer I-VI" />
-          <figcaption>Tanques Panzer I–VI</figcaption>
-        </figure>
-
-        <figure class="gallery-item">
-          <img src="img/foto7.jpg" alt="Insignias del Ejército Alemán" />
-          <figcaption>Insignias del Ejército Alemán</figcaption>
-        </figure>
-
-      </div>
-
-      <hr class="divider" />
-
-      <div class="social-section">
-        <p>Síguenos en nuestras redes sociales</p>
-        <div class="social-icons">
-          <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <footer>
+                <p>Sitio web de carácter histórico y educativo - ISIL 2026</p>
+                <nav class="menu">
+                    <ul class="redes">
+                        <li><a href="https://x.com/DHhistory" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/HistoryChannel" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/history" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@historychannel" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </nav>
+            </footer>
         </div>
-      </div>
     </div>
-  </main>
-
-  <footer>
-    <div class="footer-logo">Das Reich</div>
-    <p>Sitio web de carácter estrictamente histórico y educativo.</p>
-    <p>Diseño y Desarrollo Web · ISIL 2026</p>
-    <div class="social-icons" style="margin-top:16px;">
-      <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
-  </footer>
-
 </body>
 </html>

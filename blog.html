@@ -1,94 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog · El Ascenso del Tercer Reich</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%238b0000'/><text y='24' x='4' font-size='22' fill='%23d4a017'>R</text></svg>" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="css/estilo.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - El Ascenso del Tercer Reich</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="shortcut icon" href="img/portada.jpg" type="image/jpeg">
 </head>
 <body>
+    <audio src="audio/musica.mp3" autoplay loop></audio>
+    <div id="container">
+        <div id="principal">
+            <header>
+                <h1>El Ascenso del Tercer Reich</h1>
+                <nav class="menu">
+                    <ul class="web">
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i> INICIO</a></li>
+                        <li><a href="blog.html" class="active"><i class="fa-solid fa-feather-pointed"></i> BLOG</a></li>
+                        <li><a href="galeria.html"><i class="fa-solid fa-images"></i> GALERIA</a></li>
+                        <li><a href="videos.html"><i class="fa-solid fa-film"></i> VIDEOS</a></li>
+                    </ul>
+                </nav>
+            </header>
 
-  <!-- AUDIO automático sin controles visibles -->
-  <audio controls loop autoplay>
-    <source src="audio/musica.mp3" type="audio/mpeg" />
-  </audio>
+            <section>
+                <div id="foto">
+                    <img src="img/foto1.jpg" alt="Hitler y Hindenburg, Potsdam 1933">
+                </div>
+                <p style="text-align:center; color:#888; font-style:italic; margin-bottom:20px;">El 21 de marzo de 1933, Hitler es recibido por el presidente Hindenburg en Potsdam, marcando el inicio oficial del Tercer Reich.</p>
 
-  <header>
-    <div class="logo">&#9763; Das Reich</div>
-    <nav>
-      <ul>
-        <li><a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
-        <li><a href="blog.html" class="active"><i class="fa-solid fa-feather-pointed"></i> Blog</a></li>
-        <li><a href="galeria.html"><i class="fa-solid fa-images"></i> Galería</a></li>
-        <li><a href="videos.html"><i class="fa-solid fa-film"></i> Videos</a></li>
-      </ul>
-    </nav>
-  </header>
+                <article>
+                    <figure>
+                        <img src="img/autor.png" alt="Dereck Ramos">
+                        <figcaption>Dereck Ramos<br>Estudiante ISIL</figcaption>
+                    </figure>
 
-  <main class="page-wrap">
-    <img class="page-banner" src="img/foto1.jpg" alt="Hitler y Hindenburg, Potsdam 1933" />
+                    <h2>La República de Weimar y el Vacío de Poder</h2>
+                    <p>27/05/2026 - Historia Contemporánea</p>
 
-    <div class="container">
-      <div class="blog-header">
-        <div class="blog-title-wrap">
-          <h2>La República de Weimar y el Vacío de Poder</h2>
-          <span class="date"><i class="fa-regular fa-calendar"></i> 27 / 05 / 2026 &nbsp;·&nbsp; Historia Contemporánea</span>
+                    <p>Al finalizar la Primera Guerra Mundial en 1918, Alemania quedó devastada moral, económica y políticamente. El Tratado de Versalles impuso reparaciones de guerra que hundieron la economía germana, generando una hiperinflación sin precedentes que destruyó los ahorros de la clase media y creó un caldo de cultivo ideal para el extremismo político.</p>
+
+                    <img id="img-flotante" src="img/foto1.jpg" alt="Hitler y Hindenburg">
+                    <p style="font-size:0.85em; color:#888; font-style:italic; margin-bottom:15px;">Hitler estrecha la mano de Hindenburg en el llamado "Día de Potsdam", símbolo de la alianza entre el viejo orden conservador y el nuevo movimiento nazi.</p>
+
+                    <p>Adolf Hitler, un cabo austriaco de la Gran Guerra, encontró en este clima de resentimiento y desesperación el combustible para su ascenso. Ingresó al Partido Obrero Alemán en 1919 y rápidamente tomó su liderazgo, renombrándolo como el <em>Nationalsozialistische Deutsche Arbeiterpartei</em> (NSDAP). Su oratoria incendiaria y la promesa de restaurar la grandeza alemana resonaron con millones de ciudadanos desilusionados.</p>
+
+                    <p>El fallido <em>Putsch de la Cervecería</em> de 1923 en Múnich terminó con Hitler en prisión, donde dictó el primer volumen de <em>Mein Kampf</em>. Lejos de aniquilar al movimiento, el juicio le dio notoriedad nacional. Salió de la cárcel en 1924 decidido a conquistar el poder por vías legales.</p>
+
+                    <p>La Gran Depresión de 1929 fue el catalizador definitivo. El desempleo masivo y la desconfianza en las instituciones democráticas hicieron que los votantes buscaran soluciones radicales. El NSDAP pasó del 2,6% de los votos en 1928 al 37,4% en julio de 1932, convirtiéndose en el partido más votado del Reichstag.</p>
+
+                    <p>El 30 de enero de 1933, el presidente Paul von Hindenburg nombró a Hitler Canciller del Reich. En menos de dos años, mediante el Decreto del Incendio del Reichstag y la <em>Ley Habilitante</em>, Hitler disolvió la democracia y concentró todo el poder en sus manos. La República de Weimar había muerto. Nacía el Tercer Reich.</p>
+                </article>
+
+                <p style="margin-top:20px; color:#888;">Síguenos en nuestras redes sociales:</p>
+            </section>
+
+            <footer>
+                <p>Sitio web de carácter histórico y educativo - ISIL 2026</p>
+                <nav class="menu">
+                    <ul class="redes">
+                        <li><a href="https://x.com/DHhistory" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/HistoryChannel" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/history" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@historychannel" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </nav>
+            </footer>
         </div>
-        <div class="author-card">
-          <img src="img/autor.png" alt="Foto de Dereck Ramos" />
-          <span>Dereck Ramos<br />Estudiante ISIL</span>
-        </div>
-      </div>
-
-      <hr class="divider" />
-
-      <article class="blog-article blog-large">
-
-        <p>Al finalizar la Primera Guerra Mundial en 1918, Alemania quedó devastada moral, económica y políticamente. El Tratado de Versalles impuso reparaciones de guerra que hundieron la economía germana, generando una hiperinflación sin precedentes que destruyó los ahorros de la clase media y creó un caldo de cultivo ideal para el extremismo político.</p>
-
-        <figure class="float-img">
-          <img src="img/foto1.jpg" alt="Hitler y Hindenburg, Potsdam 1933" />
-          <figcaption>Hitler y Hindenburg,<br />Potsdam, 21.03.1933</figcaption>
-        </figure>
-
-        <p>Adolf Hitler, un cabo austriaco de la Gran Guerra, encontró en este clima de resentimiento y desesperación el combustible para su ascenso. Ingresó al Partido Obrero Alemán en 1919 y rápidamente tomó su liderazgo, renombrándolo como el <em>Nationalsozialistische Deutsche Arbeiterpartei</em> (NSDAP). Su oratoria incendiaria y la promesa de restaurar la grandeza alemana resonaron con millones de ciudadanos desilusionados.</p>
-
-        <p>El fallido <em>Putsch de la Cervecería</em> de 1923 en Múnich terminó con Hitler en prisión, donde dictó el primer volumen de <em>Mein Kampf</em>. Lejos de aniquilar al movimiento, el juicio le dio notoriedad nacional. Salió de la cárcel en 1924 decidido a conquistar el poder por vías legales.</p>
-
-        <p>La Gran Depresión de 1929 fue el catalizador definitivo. El desempleo masivo y la desconfianza en las instituciones democráticas hicieron que los votantes buscaran soluciones radicales. El NSDAP pasó del 2,6% de los votos en 1928 al 37,4% en julio de 1932, convirtiéndose en el partido más votado del Reichstag.</p>
-
-        <p>El 30 de enero de 1933, el presidente Paul von Hindenburg nombró a Hitler Canciller del Reich. En menos de dos años, mediante el Decreto del Incendio del Reichstag y la <em>Ley Habilitante</em>, Hitler disolvió la democracia y concentró todo el poder en sus manos. La República de Weimar había muerto. Nacía el Tercer Reich.</p>
-
-      </article>
-
-      <div class="clearfix"></div>
-      <hr class="divider" />
-
-      <div class="social-section">
-        <p>Síguenos en nuestras redes sociales</p>
-        <div class="social-icons">
-          <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-      </div>
     </div>
-  </main>
-
-  <footer>
-    <div class="footer-logo">Das Reich</div>
-    <p>Sitio web de carácter estrictamente histórico y educativo.</p>
-    <p>Diseño y Desarrollo Web · ISIL 2026</p>
-    <div class="social-icons" style="margin-top:16px;">
-      <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
-  </footer>
-
 </body>
 </html>
